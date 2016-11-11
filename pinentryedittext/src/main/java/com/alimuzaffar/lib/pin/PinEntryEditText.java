@@ -309,7 +309,7 @@ public class PinEntryEditText extends EditText {
             }
             //The lines should be in front of the text (because that's how I want it).
             if (mPinBackground == null) {
-                updateColorForLines(i <= textLength);
+                updateColorForLines(i == textLength - 1);
                 canvas.drawLine(mLineCoords[i].left, mLineCoords[i].top, mLineCoords[i].right, mLineCoords[i].bottom, mLinesPaint);
             }
         }
